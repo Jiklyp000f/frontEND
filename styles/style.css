@@ -3,12 +3,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 header, footer {
     background-color: #f2f2f2;
     padding: 20px;
     text-align: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
 nav ul {
@@ -42,12 +53,13 @@ h1 {
 /* Секции */
 section {
     padding: 40px;
+    width: 100%;
+    max-width: 800px; /* Примерная ширина содержимого */
 }
 
 /* Форма */
 form {
     max-width: 400px;
-    margin: 0 auto;
     text-align: left;
 }
 
@@ -70,4 +82,44 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    width: 100%;
+    max-width: 1200px;
 }
+
+.block_1 {
+    position: relative;
+}
+
+.block_1 img {
+    width: 100%;
+    height: auto;
+}
+
+.block_1 .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-93%, -46%);
+    text-align: left;
+    color: #fff;
+}
+
+.block_1 .hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.block_1 .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.block_1 .hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
