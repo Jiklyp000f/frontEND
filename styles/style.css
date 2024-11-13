@@ -13,14 +13,18 @@ img {
     max-width: 100%;
     height: auto;
 }
+.logo{
+    max-width: 100px;
+    left: 150px;
+}
 
-
-header, footer {
+header{
     background-color: #f2f2f2;
     padding: 20px;
-    text-align: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: auto;
+    justify-content: space-between;
+    display: flex;
 }
 
 nav ul {
@@ -84,7 +88,7 @@ footer {
     padding: 20px;
     text-align: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: auto;
 }
 
 .block_1 {
@@ -94,6 +98,17 @@ footer {
 .block_1 img {
     width: 100%;
     height: auto;
+}
+.container_pink {
+    background-color: #F1C0C7;
+    position: absolute;
+    z-index: 1;
+    width: 565px;
+    height: 90px;
+}
+.container_pink img {
+    width: 84px;
+    height: 54px;
 }
 
 .block_1 .hero-content {
