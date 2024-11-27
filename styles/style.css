@@ -1,5 +1,6 @@
 @import 'reset.css';
 @import 'normalize.css';
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,34 +8,48 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
-.logo{
+
+.logo {
+    margin-left: 72px;
     max-width: 100px;
     left: 150px;
 }
 
-header{
+.authorization {
+    padding: 13px 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 150px;
+}
+
+header {
     background-color: #f2f2f2;
     padding: 20px;
     width: 100%;
-    max-width: auto;
     justify-content: space-between;
     display: flex;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
+    display: flex;
+    padding: 0; 
+    margin: 0; 
+    margin-left: 800px;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
+    margin-top: 14px;
 }
 
 a {
@@ -88,34 +103,43 @@ footer {
     padding: 20px;
     text-align: center;
     width: 100%;
-    max-width: auto;
 }
 
+/* Контейнер для блока 1 */
 .block_1 {
-    position: relative;
+    position: relative; /* Относительное позиционирование для родителя */
 }
 
 .block_1 img {
     width: 100%;
     height: auto;
 }
+
+/* Контейнер с розовым фоном */
 .container_pink {
-    background-color: #F1C0C7;
+    background-color: rgba(241, 192, 199, 1);
     position: absolute;
+    top: 88%;
     z-index: 1;
     width: 565px;
     height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
+
+/* Изображение внутри контейнера */
 .container_pink img {
     width: 84px;
     height: 54px;
 }
 
+
+/* Содержимое героя */
 .block_1 .hero-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-93%, -46%);
+    top: 37%;
+    left: 11%;
     text-align: left;
     color: #fff;
 }
