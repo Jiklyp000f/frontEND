@@ -37,18 +37,38 @@
         </div>
       </nav>
       <div class="container-fluid p-0">
-        <img src="img/mama_sin.jpg" alt="mama_sin" style="width: 100%; height: 100%;">
-      </div>
-      <div class="container-fluid p-0">
+        <img src="img/mama_sin.jpg" alt="mama_sin" style="width: 100%; height: 100vh; object-fit: cover;">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh; position: absolute; top: 0; left: 0; right: 0;">
+            <div class="content-block">
+                <h2>Заголовок</h2>
+                <p>Маленький текст под заголовком.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <button class="btn btn-primary">Кнопка</button>
+                    <a href="#" class="text-white">Текст с ссылкой</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid p-0">
+        <div class="independent-block">
+            <img src="img/microCOMP.png" alt="Эмблема">
+            <div>
+                <a href="#" class="text-muted" style="font-size: 12px;">Текст ссылка маленького шрифта</a>
+                <p style="font-size: 10px; margin: 0;">Просто текст маленького размера</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
         <div class="row">
             <!-- Первая карточка -->
             <div class="col-md-3">
                 <div class="card">
                     <img src="img/card1.jpg" class="card-img-top" alt="Товар 1">
-                    <div class="card-body">
+                    <div class="overlay">
                         <h5 class="card-title">Товар 1</h5>
                         <p class="card-text">Описание товара 1.</p>
-                        <a href="#" class="btn btn-primary">Купить</a>
+                        <a href="#" class="text-white">Читать больше</a>
                     </div>
                 </div>
             </div>
@@ -56,10 +76,10 @@
             <div class="col-md-3">
                 <div class="card">
                     <img src="img/card2.jpg" class="card-img-top" alt="Товар 2">
-                    <div class="card-body">
+                    <div class="overlay">
                         <h5 class="card-title">Товар 2</h5>
                         <p class="card-text">Описание товара 2.</p>
-                        <a href="#" class="btn btn-primary">Купить</a>
+                        <a href="#" class="text-white">Читать больше</a>
                     </div>
                 </div>
             </div>
@@ -67,10 +87,10 @@
             <div class="col-md-3">
                 <div class="card">
                     <img src="img/card3.jpg" class="card-img-top" alt="Товар 3">
-                    <div class="card-body">
+                    <div class="overlay">
                         <h5 class="card-title">Товар 3</h5>
                         <p class="card-text">Описание товара 3.</p>
-                        <a href="#" class="btn btn-primary">Купить</a>
+                        <a href="#" class="text-white">Читать больше</a>
                     </div>
                 </div>
             </div>
@@ -78,10 +98,10 @@
             <div class="col-md-3">
                 <div class="card">
                     <img src="img/card4.jpg" class="card-img-top" alt="Товар 4">
-                    <div class="card-body">
+                    <div class="overlay">
                         <h5 class="card-title">Товар 4</h5>
                         <p class="card-text">Описание товара 4.</p>
-                        <a href="#" class="btn btn-primary">Купить</a>
+                        <a href="#" class="text-white">Читать больше</a>
                     </div>
                 </div>
             </div>
@@ -128,12 +148,95 @@
           <img src="img/clown.jpg" class="img-fluid" alt="Изображение на весь контейнер">
       </div>
     </div>
-      <div class="container-fluid p-0">
-        
+    <div class="container-fluid p-0">
+      <div class="row align-items-center p-3">
+        <div class="col-md-6 text-left">
+            <img src="img/zapyate.png" alt="Эмблема" class="mb-2">
+            <h3>Заголовок</h3>
+            <p>Текст под заголовком.</p>
+            <button class="btn btn-primary">Кнопка</button>
+        </div>
+        <div class="col-md-6 text-right">
+            <img src="img/rozy.jpg" class="img-fluid" alt="Изображение">
+            <small>Маленький текст под картинкой.</small>
+        </div>
+    </div>
+    <div class="row p-3">
+      <div class="col-md-6 text-center">
+          <img src="img/imgR.jpg" class="img-fluid" alt="Изображение 1">
+          <h4>Заголовок 1</h4>
+          <p>Текст под заголовком 1.</p>
       </div>
-      <div class="container-fluid p-0">
-        
+      <div class="col-md-6 text-center">
+          <img src="img/imgL.jpg" class="img-fluid" alt="Изображение 2">
+          <h4>Заголовок 2</h4>
+          <p>Текст под заголовком 2.</p>
       </div>
+  </div>
+  <div class="row p-3">
+    <div class="col-12 text-center mb-3">
+        <h2>Заголовок карточек</h2>
+    </div>
+    <div class="independent-block">
+        <img src="img/microCOMP.png" alt="Эмблема">
+        <div>
+            <a href="#" class="text-muted" style="font-size: 12px;">Текст ссылка маленького шрифта</a>
+            <p style="font-size: 10px; margin: 0;">Просто текст маленького размера</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Название товара 1</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Цена: 1000 руб.</h6>
+                <img src="img/tovar1.jpg" class="card-img-top" alt="Товар 1">
+                <p class="card-text">Описание товара 1.</p>
+                <button class="btn btn-primary">Купить</button>
+                <button class="btn btn-link">Читать о товаре</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Название товара 2</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Цена: 2000 руб.</h6>
+                <img src="img/tovar2.jpg" class="card-img-top" alt="Товар 2">
+                <p class="card-text">Описание товара 2.</p>
+                <button class="btn btn-primary">Купить</button>
+                <button class="btn btn-link">Читать о товаре</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Название товара 3</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Цена: 3000 руб.</h6>
+                <img src="img/tovar3.jpg" class="card-img-top" alt="Товар 3">
+                <p class="card-text">Описание товара 3.</p>
+                <button class="btn btn-primary">Купить</button>
+                <button class="btn btn-link">Читать о товаре</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Название товара 4</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Цена: 4000 руб.</h6>
+                <img src="img/tovar4.jpg" class="card-img-top" alt="Товар 4">
+                    <p class="card-text">Описание товара 4.</p>
+                    <button class="btn btn-primary">Купить</button>
+                    <button class="btn btn-link">Читать о товаре</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mb-3">
+        <button class="btn btn-secondary">Показать больше</button>
+    </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 <footer>
