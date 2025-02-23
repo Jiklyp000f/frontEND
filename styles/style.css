@@ -15,4 +15,114 @@ a:hover{
     color: blue;
 }
 
+h1 {
+    color: #1B365D;
+    font-weight: bold; /* Жирный шрифт */
+}
 
+p {
+    color: #434140;
+    font-weight: bold;
+}
+
+button.btn.btn-primary {
+    color: #1B365D;
+    font-weight: bold;
+    background-color: white; /* Белый фон */
+    border: 1px solid white; /* Цвет границы  */
+    border-radius: 25px; /* Скруглённые углы, можно изменить радиус */
+    padding: 10px 20px;
+}
+
+button.btn.btn-outline-success {
+    color: #1B365D;
+    font-weight: bold;
+    background-color: white; /* Белый фон */
+    border: 1px solid #1B365D; /* Цвет границы  */
+    border-radius: 8px; /* Скруглённые углы, можно изменить радиус */
+    padding: 4px 20px;
+    font-size: 11px;
+
+}
+a.text-muted {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p.red{
+    font-size: 16px;
+}
+
+a.nav-link.active {
+    color: #1B365D !important;
+}
+
+
+
+/* a.text-black {
+    color: #1B365D !important;
+} */
+
+div.overlay {
+    text-align: center;
+    margin-top: -127px;
+}
+
+div.independent-block {
+    position: relative;
+    width: 499px;
+    height: 86px;
+    background-color: #F1C0C7;
+    display: flex; /* Используем Flexbox для выравнивания */
+    align-items: center; /* Выравнивание по вертикали */
+    padding: 10px; /* Добавляем отступы для лучшего внешнего вида */
+    margin-top: -60px;
+}
+
+div.independent-block img {
+    width: 84px; /* Устанавливаем ширину изображения */
+    height: 54px; /* Устанавливаем высоту изображения */
+    margin-right: 10px; /* Отступ справа от изображения */
+}
+
+div.in-block {
+    position: relative;
+    height: 86px;
+    display: flex; /* Используем Flexbox для выравнивания */
+    align-items: center; /* Выравнивание по вертикали */
+    padding: 10px; /* Добавляем отступы для лучшего внешнего вида */
+    margin-top: -20px;
+}
+
+div.in-block img {
+    width: 84px; /* Устанавливаем ширину изображения */
+    height: 54px; /* Устанавливаем высоту изображения */
+    margin-right: 10px; /* Отступ справа от изображения */
+}
+
+div.row {
+    margin-top: 90px;
+}
+
+.background-rectangle {
+    width: 100%; /* Занимает всю ширину экрана */
+    height: 497px; /* Высота прямоугольника, можно изменить по желанию */
+    background-color:#D0E8EAC7; /* Цвет фона */
+    margin-top: -459px;
+}
+
+.background-rectangle2{
+    width: 100%; /* Занимает всю ширину экрана */
+    height: 1500px; /* Высота прямоугольника, можно изменить по желанию */
+    background-color:#D0E8EAC7; /* Цвет фона */
+    margin-top: -1400px;
+}
+
+h5.card-title {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+p.card-text {
+    color: #FFFFFF;
+}
