@@ -112,6 +112,10 @@ div.row {
     margin-top: 90px;
 }
 
+div.card-body {
+    background-color: #F7F7F7;
+}
+
 .background-rectangle {
     width: 100%; /* Занимает всю ширину экрана */
     height: 497px; /* Высота прямоугольника, можно изменить по желанию */
@@ -133,4 +137,82 @@ h5.card-title {
 
 p.card-text {
     color: #FFFFFF;
+}
+
+small.small-text{
+    font-size: 11px;
+    color: #AEABA8;
+}
+
+.position-relative {
+    position: relative;
+}
+  
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px; /* Отступы для текста */
+    margin-top: 2%;
+    margin-left: 4%;
+    color: white; /* Цвет текста */
+}
+[data-type="fhoto1"] h2{
+    color: #1B365D;
+    font-weight: bold;
+} 
+[data-type="fhoto1"] p{
+    color: #434140 !important;
+}
+
+[data-type="fhoto1"] a{
+    color: #1B365D !important;
+    font-weight: bold;
+}
+
+[data-type="fhoto2"] .h2{
+    color: #FFFFFF;
+    font-weight: bold;
+} 
+[data-type="fhoto2"] p{
+    color: #FFFFFF !important;
+}
+
+[data-type="fhoto2"] a{
+    color: #FFFFFF !important;
+    font-weight: bold;
+}
+
+div.row.align-items-center[data-type="footer"] {
+    margin-top: 0px;
+}
+
+[data-type="crd"] {
+    text-align: center; /* Центрирование текста для кнопок */
+}
+
+[data-type="crd"] .card-title {
+    float: left; /* Заголовок слева */
+    color: #1B365D;
+}
+
+[data-type="crd"] .card-subtitle {
+    float: right; /* Цена справа */
+}
+
+[data-type="crd"] .clearfix {
+    clear: both; /* Очищаем float */
+}
+
+[data-type="crd"] .btn {
+    display: inline-block; /* Кнопки как блочные элементы */
+}
+
+[data-type="crd"] .btn-primary {
+    margin-bottom: 0.5rem; /* Отступ между кнопками */
+    background-color: #1877F2 !important;
+}
+
+[data-type="crd"] p.card-text {
+    color: #434140 !important;
 }

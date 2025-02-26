@@ -134,11 +134,11 @@
         <div class="container-fluid p-0">
           <div class="row align-items-center">
               <!-- Первый контейнер с изображением и текстом -->
-              <div class="col-md-6">
+              <div class="col-md-6" style="margin-top: -5%;">
                   <img src="img/planshet.jpg" class="img-fluid" alt="Изображение слева">
               </div>
               <div class="col-md-6">
-                  <div class="d-flex flex-column align-items-start" style="margin-top: -132px;">
+                  <div class="d-flex flex-column align-items-start" style="margin-top: -50%;">
                       <div class="mb-2">
                           <img src="img/molniya.jpg" class="img-fluid" alt="Эмблема 1">
                           <img src="img/whatsapp.jpg" class="img-fluid" alt="Эмблема 2">
@@ -163,43 +163,48 @@
     <div class="container-fluid p-0">
       <div class="row align-items-center p-3">
         <div class="col-md-6 text-left">
-            <img src="img/zapyate.png" alt="Эмблема" class="mb-2">
+            <img src="img/zapyate.png" alt="Эмблема" class="mb-2" style="width: 60px;">
             <h3>Alexa Built-in</h3>
             <p>Portal comes with Alexa Built-in, so you can see and do <br>
             more. Use your voice to control your smart home and check <br>
             who’s at the front door, listen to your favorite <br>
             music, watch the news and more, hands-free. Just ask.</p>
-            <button class="btn btn-primary">Learn More</button>
+            <button type="button" class="btn btn-info" style="border-radius: 25px; background-color: #ADD4E0; border-color: #ADD4E0;">Learn More</button>
         </div>
-        <div class="col-md-6 text-right">
+        <div class="col-md-6 text-right p-0">
             <img src="img/rozy.jpg" class="img-fluid" alt="Изображение">
-            <small>Amazon, Alexa and all related logos are trademarks of Amazon.com, Inc. or its affiliate. <br>
+            <small class="small-text">Amazon, Alexa and all related logos are trademarks of Amazon.com, Inc. or its affiliate. <br>
                 Additional account registration, terms and fees may apply. Features may vary by location.</small>
         </div>
     </div>
     <div class="row p-3">
-      <div class="col-md-6 text-center">
+      <div class="col-md-6 text-left position-relative">
           <img src="img/imgR.jpg" class="img-fluid" alt="Изображение 1">
-          <h4>Private by design</h4>
+        <div class="text-overlay" data-type="fhoto1">
+          <h2>Private by design</h2>
           <p>Easily disable the camera and the microphone, or block the lens <br>
             with the camera cover. And all Portal video calls are encrypted.</p>
           <a href="#" class="text-white">Learn More</a>
+        </div>
       </div>
-      <div class="col-md-6 text-center">
+      <div class="col-md-6 text-left position-relative">
           <img src="img/imgL.jpg" class="img-fluid" alt="Изображение 2">
-          <h4>Work smarter from home</h4>
+        <div class="text-overlay" data-type="fhoto2">
+          <h2>Work smarter from home</h2>
           <p>Whether you and your co-workers use Workplace, BlueJeans, <br>
             GoToMeeting, Webex or Zoom, Portal’s got the tools to keep <br>
             you productive while working from home.</p>
           <a href="#" class="text-white">Learn More</a>
+        </div>
       </div>
-  </div>
+    </div>
+<div>
   <div class="row p-3">
     <div class="col-12 text-center mb-3">
-        <h2>Find the Portal that’s <br>
-            right for you</h2>
+        <h1 style="text-align: left;">Find the Portal that’s <br>
+            right for you</h1>
     </div>
-    <div class="in-block">
+    <div class="in-block" style="margin-bottom: 4%;">
         <img src="img/microCOMP.png" alt="Эмблема">
         <div>
             <a href="#" class="text-muted">Buy any 2 and save $50*</a>
@@ -208,54 +213,73 @@
     </div>
     <div class="col-md-3">
         <div class="card">
-            <div class="card-body">
+            <div class="card-body" data-type="crd">
                 <h5 class="card-title">Portal TV</h5>
                 <h6 class="card-subtitle mb-2 text-muted">$149</h6>
+                <div class="clearfix"></div> <!-- Очищаем float -->
                 <img src="img/tovar1.jpg" class="card-img-top" alt="Товар 1">
                 <p class="card-text">Smart video calling on <br>your TV</p>
-                <button class="btn btn-primary">Buy Now</button>
-                <button class="btn btn-link">Learn More</button>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Portal</h5>
-                <h6 class="card-subtitle mb-2 text-muted">$179</h6>
-                <img src="img/tovar2.jpg" class="card-img-top" alt="Товар 2">
-                <p class="card-text">Smart video calling <br>on a 10” HD display</p>
-                <button class="btn btn-primary">Buy Now</button>
-                <button class="btn btn-link">Learn More</button>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Portal+</h5>
-                <h6 class="card-subtitle mb-2 text-muted">$279</h6>
-                <img src="img/tovar3.jpg" class="card-img-top" alt="Товар 3">
-                <p class="card-text">Smart video calling on <br>a 15.6” HD display</p>
-                <button class="btn btn-primary">Buy Now</button>
-                <button class="btn btn-link">Learn More</button>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Portal Mini</h5>
-                <h6 class="card-subtitle mb-2 text-muted">$129</h6>
-                <img src="img/tovar4.jpg" class="card-img-top" alt="Товар 4">
-                    <p class="card-text">Smart video calling <br>on an 8” HD display</p>
+                <div>
                     <button class="btn btn-primary">Buy Now</button>
+                    <br> <!-- Перенос строки для расположения кнопки ниже -->
                     <button class="btn btn-link">Learn More</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="text-center mb-3">
+    
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body" data-type="crd">
+                <h5 class="card-title">Portal</h5>
+                <h6 class="card-subtitle mb-2 text-muted">$179</h6>
+                <div class="clearfix"></div>
+                <img src="img/tovar2.jpg" class="card-img-top" alt="Товар 2">
+                <p class="card-text">Smart video calling <br>on a 10” HD display</p>
+                <div>
+                    <button class="btn btn-primary">Buy Now</button>
+                    <br> <!-- Перенос строки для расположения кнопки ниже -->
+                    <button class="btn btn-link">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body" data-type="crd">
+                <h5 class="card-title">Portal+</h5>
+                <h6 class="card-subtitle mb-2 text-muted">$279</h6>
+                <div class="clearfix"></div>
+                <img src="img/tovar3.jpg" class="card-img-top" alt="Товар 3">
+                <p class="card-text">Smart video calling on <br>a 15.6” HD display</p>
+                <div>
+                    <button class="btn btn-primary">Buy Now</button>
+                    <br> <!-- Перенос строки для расположения кнопки ниже -->
+                    <button class="btn btn-link">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body" data-type="crd">
+                <h5 class="card-title">Portal Mini</h5>
+                <h6 class="card-subtitle mb-2 text-muted">$129</h6>
+                <div class="clearfix"></div>
+                <img src="img/tovar4.jpg" class="card-img-top" alt="Товар 4">
+                <p class="card-text">Smart video calling <br>on an 8” HD display</p>
+                <div>
+                    <button class="btn btn-primary">Buy Now</button>
+                    <br> <!-- Перенос строки для расположения кнопки ниже -->
+                    <button class="btn btn-link">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="text-center mb-3" style="margin-top: 2%;">
         <button class="btn btn-secondary">Compare Products</button>
     </div>
     <div class="background-rectangle2"></div>
@@ -264,7 +288,7 @@
 </body>
 <footer>
     <div class="container-fluid p-0" style="background-color: #272E38;">
-        <div class="row align-items-center">
+        <div class="row align-items-center" data-type="footer">
             <!-- Эмблема слева -->
             <div class="col-md-4 text-center text-md-left">
                 <img src="img/logo.png" alt="Эмблема" style="max-width: 80px; height: auto;">
