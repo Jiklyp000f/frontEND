@@ -216,3 +216,12 @@ div.row.align-items-center[data-type="footer"] {
 [data-type="crd"] p.card-text {
     color: #434140 !important;
 }
+
+.card-body[data-type="crd"] {
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.card-body[data-type="crd"]:hover {
+    transform: scale(1.02);
+}
