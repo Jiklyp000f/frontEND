@@ -225,3 +225,7 @@ div.row.align-items-center[data-type="footer"] {
 .card-body[data-type="crd"]:hover {
     transform: scale(1.02);
 }
+
+.row.g-3[data-type="cards"] {
+    padding: 3%;
+}

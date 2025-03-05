@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Проект: https://www.figma.com/design/6rw5poqayob8FjgcjbcJX0/Portal?node-id=0-1&node-type=canvas&t=uv1W5kEmBImf3MBy-0",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/scripts.js",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jiklyp000f/frontEND.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jiklyp000f/frontEND/issues"
+  },
+  "homepage": "https://github.com/Jiklyp000f/frontEND#readme",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "main": "index.js"
+}
