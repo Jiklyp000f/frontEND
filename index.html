@@ -11,7 +11,7 @@
   <body>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid p-0">
-          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" style="height: 42px; width: 94.13px; margin-top: 3px; margin-left: 25px;"></a>
+          <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,9 +34,9 @@
           </div>
         </div>
       </nav>
-      <div class="container-fluid p-0">
-        <img src="img/mama_sin.jpg" alt="mama_sin" style="width: 100%; height: 100vh; object-fit: cover;">
-        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;position: absolute;top: 25px;left: -60%;right: 0;">
+      <div class="container-fluid p-0" data-type="mama_sin">
+        <img class="mama_sin" src="img/mama_sin.jpg" alt="mama_sin">
+        <div class="d-flex justify-content-center align-items-center">
             <div class="content-block">
                 <h1>If you can’t be <br>
                     there, feel there <br>
@@ -104,19 +104,19 @@
         </div>
     </div>
     
-    <div class="container-fluid p-0 mt-5">
+    <div class="container-fluid p-0 mt-5" data-type="mama_doch">
       <div class="text-center">
-          <h1 style="text-align: left; margin-left: 3%;">Smart Camera keeps every <br> front and center</h1>
+          <h1>Smart Camera keeps every <br> front and center</h1>
           <img src="img/ctol.jpg" class="img-fluid" alt="Изображение">
-          <div class="row mt-3" style="margin-left: 10%;">
-              <div class="col-md-6" style="text-align: left;">
+          <div class="row mt-3">
+              <div class="col-md-6">
                 <h5>Keeps up with the action</h5>
                   <p class="picture">Smart Camera automatically pans and zooms <br>
                     to keep up with the action. Move and talk freely <br>
                     and always stay in frame.</p>
                   <a href="#" class="text-darkblue">Learn More</a>
               </div>
-              <div class="col-md-6" style="text-align: left;">
+              <div class="col-md-6">
                 <h5>Keeps everyone in view</h5>
                   <p class="picture">As more people enter a room, Smart Camera <br>
                     automatically widens to keep everyone in view, <br>
@@ -127,6 +127,8 @@
       </div>
       <div class="background-rectangle"></div>
     </div>
+
+    <!--ВОТ ТУТ ПЕРЕДЕЛАТЬ ПО БЭМУ-->
     <div class="container-fluid p-0">
         <div class="container-fluid p-0">
           <div class="row align-items-center">
@@ -168,7 +170,7 @@
             music, watch the news and more, hands-free. Just ask.</p>
             <button type="button" class="btn btn-info" style="border-radius: 25px; background-color: #ADD4E0; border-color: #ADD4E0;">Learn More</button>
         </div>
-        <div class="col-md-6 text-right p-0">
+        <div class="col-md-6 text-center p-0">
             <img src="img/rozy.jpg" class="img-fluid" alt="Изображение">
             <small class="small-text">Amazon, Alexa and all related logos are trademarks of Amazon.com, Inc. or its affiliate. <br>
                 Additional account registration, terms and fees may apply. Features may vary by location.</small>
@@ -289,8 +291,8 @@
     <div class="container-fluid p-0" style="background-color: #272E38;">
         <div class="row align-items-center" data-type="footer">
             <!-- Эмблема слева -->
-            <div class="col-md-4 text-center text-md-left">
-                <img src="img/foot_logo.png" alt="Эмблема" style="max-width: 80px; height: auto;">
+            <div class="col-md-3 text-top">
+                <img src="img/foot_logo.png" alt="footer_logo" style="max-width: 80px; height: auto;">
             </div>
             <!-- Блок с ссылками и кнопками справа -->
             <div class="col-md-8" data-type="foot">
@@ -322,7 +324,7 @@
                     <div class="ml-0" style="margin-top: 4%;"> 
                         <p style="font-size: 12px; margin: 0;">Get emails from Facebook about Portal <br>and other Facebook hardware products.</p>
                         <button class="btn btn-primary btn-sm">Sign Up</button>
-                        <button class="btn btn-link btn-sm">Выбор языка</button>
+                        <button class="btn btn-link btn-sm">United States (English)</button>
                     </div>
                 </div>
                 <div class="mt-1">
@@ -339,8 +341,5 @@
             </div>
         </div>
     </div>
-    
-    
-    
 </footer>
 </html>

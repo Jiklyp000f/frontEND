@@ -19,6 +19,8 @@ a:hover{
     color: blue;
 }
 
+
+
 h1 {
     color: #1B365D;
     font-weight: bold; /* Жирный шрифт */
@@ -27,6 +29,19 @@ h1 {
 p {
     color: #434140;
     font-weight: bold;
+}
+
+img.mama_sin{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+img.logo{
+    height: 42px;
+    width: 94.13px;
+    margin-top: 1%;
+    margin-left: 28%;
 }
 
 img.card-img-top {
@@ -157,6 +172,27 @@ small.small-text{
     margin-left: 4%;
     color: white; /* Цвет текста */
 }
+
+[data-type="mama_sin"] .d-flex.justify-content-center.align-items-center{
+    height: 100vh;
+    position: absolute;
+    top: 25px;left: -60%;
+    right: 0;
+}
+
+[data-type="mama_sin"] .row.mt-3{
+    margin-left: 10%;
+}
+
+[data-type="mama_sin"] .col-md-6{
+    text-align: left;
+}
+
+[data-type="mama_doch"] h1{
+    text-align: left;
+    margin-left: 3%;
+}
+
 [data-type="fhoto1"] h2{
     color: #1B365D;
     font-weight: bold;
@@ -236,4 +272,19 @@ div.row.align-items-center[data-type="footer"] {
 
 [data-type="foot"] p{
     color: #9CA5B0;
+}
+
+[data-type="foot"] .btn.btn-primary.btn-sm{
+    margin-top: 4%;
+}
+
+[data-type="foot"] .btn.btn-link.btn-sm {
+    margin-top: 4%;
+    padding: 6%;
+    border-color: #3D434C;
+}
+
+[data-type] .col-md-3.text-top{
+    margin-top: -17%;
+    margin-left: 2%;
 }
