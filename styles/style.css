@@ -229,3 +229,11 @@ div.row.align-items-center[data-type="footer"] {
 .row.g-3[data-type="cards"] {
     padding: 3%;
 }
+
+[data-type="foot"] a {
+    color: #DADBDD;
+}
+
+[data-type="foot"] p{
+    color: #9CA5B0;
+}
