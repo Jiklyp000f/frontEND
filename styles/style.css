@@ -288,3 +288,33 @@ div.row.align-items-center[data-type="footer"] {
     margin-top: -17%;
     margin-left: 2%;
 }
+
+[data-type="alexa-container"] img {
+    width: 60px;
+}
+
+/* Стили для контейнера с микрофоном */
+[data-type="micro-comp-container"] {
+    margin-bottom: 4%;
+}
+
+/* Стили для первого контейнера */
+[data-type="image-container-left"] {
+    margin-top: -5%;
+}
+
+[data-type="text-container"] {
+    margin-top: -50%;
+}
+
+[data-type="header-title-container"] h1 {
+    text-align: left;
+}
+
+.compare-products-container {
+    margin-top: 2%;
+}
+
+.card-Holder {
+    padding: 1%;
+}
