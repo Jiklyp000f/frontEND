@@ -318,3 +318,15 @@ div.row.align-items-center[data-type="footer"] {
 .card-Holder {
     padding: 1%;
 }
+
+.carousel-indicators{
+    bottom: -7%;
+}
+
+.carousel-control-prev-icon{
+    background-image:none;
+}
+
+.carousel-control-next-icon{
+    background-image:none;
+}

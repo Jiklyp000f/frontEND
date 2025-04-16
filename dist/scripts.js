@@ -6,35 +6,23 @@ const cardsData = [
     { imgSrc: "img/card3.jpg", title: "Portal+", description: "Smart video calling on a <br>15.6” HD display", linkText: "Learn More" },
     { imgSrc: "img/card4.jpg", title: "Portal Mini", description: "Smart video calling on an <br>8” HD display", linkText: "Learn More" }
 ];
-// Функция для создания карточки
+// Функция для создания карточки с использованием шаблонной строки
 function createCard(card) {
+    const cardHTML = `
+        <div class="col-md-3">
+            <div class="card">
+                <img src="${card.imgSrc}" class="card-img-top" alt="${card.title}">
+                <div class="overlay">
+                    <h5 class="card-title">${card.title}</h5>
+                    <p class="card-text">${card.description}</p>
+                    <a href="#" class="text-white">${card.linkText}</a>
+                </div>
+            </div>
+        </div>
+    `;
     const cardDiv = document.createElement("div");
-    cardDiv.classList.add("col-md-3");
-    const cardElement = document.createElement("div");
-    cardElement.classList.add("card");
-    const img = document.createElement("img");
-    img.src = card.imgSrc;
-    img.alt = card.title;
-    img.classList.add("card-img-top");
-    const overlay = document.createElement("div");
-    overlay.classList.add("overlay");
-    const title = document.createElement("h5");
-    title.classList.add("card-title");
-    title.innerHTML = card.title;
-    const description = document.createElement("p");
-    description.classList.add("card-text");
-    description.innerHTML = card.description;
-    const link = document.createElement("a");
-    link.href = "#";
-    link.classList.add("text-white");
-    link.textContent = card.linkText;
-    overlay.appendChild(title);
-    overlay.appendChild(description);
-    overlay.appendChild(link);
-    cardElement.appendChild(img);
-    cardElement.appendChild(overlay);
-    cardDiv.appendChild(cardElement);
-    return cardDiv;
+    cardDiv.innerHTML = cardHTML;
+    return cardDiv.firstElementChild;
 }
 // Отрисовываем карточки в DOM
 function renderCards(containerSelector, cards) {
@@ -49,4 +37,4 @@ function renderCards(containerSelector, cards) {
     });
 }
 // Вызываем функцию рендеринга
-renderCards(".row[data-type='cards']", cardsData);
+renderCards(".row.g-3[data-type='cards']", cardsData);
