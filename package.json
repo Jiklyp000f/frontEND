@@ -23,5 +23,9 @@
   "devDependencies": {
     "typescript": "^5.8.2"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "bootstrap": "^5.3.5"
+  }
 }

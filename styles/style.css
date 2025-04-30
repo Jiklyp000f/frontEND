@@ -61,10 +61,10 @@ button.btn.btn-outline-success {
     color: #1B365D;
     font-weight: bold;
     background-color: white; /* Белый фон */
-    border: 1px solid #1B365D; /* Цвет границы  */
+    border: 2px solid #1B365D; /* Цвет границы  */
     border-radius: 8px; /* Скруглённые углы, можно изменить радиус */
-    padding: 4px 20px;
-    font-size: 11px;
+    padding: 7px 20px;
+    font-size: 15px;
 
 }
 a.text-muted {

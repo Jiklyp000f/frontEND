@@ -1,4 +1,5 @@
 <!doctype html>
+<!--осталось доделать форму "регистрации" и задание 3-->
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -9,30 +10,53 @@
     <link rel="stylesheet" href="styles/style.css">  
 </head>
   <body>
-      <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid p-0">
-          <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 55px;">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Support</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <button class="btn btn-outline-success" type="submit">Log into</button>
-            </form>
-          </div>
+            <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 55px;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Support</a>
+                    </li>
+                </ul>
+                <!-- Убрал форму, она здесь не нужна -->
+                <button class="btn btn-outline-success ms-2" type="button" id="openModal">Log in</button>
+            </div>
         </div>
-      </nav>
+    </nav>
+    
+    <!-- Модальное окно -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="nameInput" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailInput" required>
+                        </div>
+                        <div class="d-flex justify-content-end gap-2">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                            <button type="submit" class="btn btn-primary">OK</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
       <div class="container-fluid p-0" data-type="mama_sin">
         <img class="mama_sin" src="img/mama_sin.jpg" alt="mama_sin">
         <div class="d-flex justify-content-center align-items-center">
@@ -277,7 +301,7 @@
                     </div>
             
                     <!-- Слайды 2 -->
-                        <div class="carousel-item active">
+                    <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="card">
@@ -340,7 +364,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                    </div>
                     
                 </div>
             
@@ -420,6 +444,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="dist/scripts.js"></script>
     <script src="dist/preloader.js" defer></script>
+    <script src="dist/modal.js"></script>
 </body>
 
 </html>
