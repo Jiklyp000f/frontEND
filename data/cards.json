@@ -1,0 +1,28 @@
+{
+    "cards": [
+      {
+        "imgSrc": "img/card1.jpg",
+        "title": "Portal TV",
+        "description": "Smart video calling on the <br>biggest screen in your home",
+        "linkText": "Learn More"
+      },
+      {
+        "imgSrc": "img/card2.jpg",
+        "title": "Portal",
+        "description": "Smart video calling on a <br>10” HD display",
+        "linkText": "Learn More"
+      },
+      {
+        "imgSrc": "img/card3.jpg",
+        "title": "Portal+",
+        "description": "Smart video calling on a <br>15.6” HD display",
+        "linkText": "Learn More"
+      },
+      {
+        "imgSrc": "img/card4.jpg",
+        "title": "Portal Mini",
+        "description": "Smart video calling on an <br>8” HD display",
+        "linkText": "Learn More"
+      }
+    ]
+  }

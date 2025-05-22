@@ -16,7 +16,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 55px;">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Products</a>
@@ -28,13 +28,11 @@
                         <a class="nav-link active" href="#">Support</a>
                     </li>
                 </ul>
-                <!-- Убрал форму, она здесь не нужна -->
                 <button class="btn btn-outline-success ms-2" type="button" id="openModal">Log in</button>
             </div>
         </div>
     </nav>
-    
-    <!-- Модальное окно -->
+    <!-- Modal НЕ ДОБАВИЛ -->
     <div class="modal fade" id="loginModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -56,7 +54,9 @@
                 </div>
             </div>
         </div>
+
     </div>
+
       <div class="container-fluid p-0" data-type="mama_sin">
         <img class="mama_sin" src="img/mama_sin.jpg" alt="mama_sin">
         <div class="d-flex justify-content-center align-items-center">
@@ -82,6 +82,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Карточки НЕ ПЕРЕНЁС ПРОБЛЕМЫ С JS-->
     <div class="container-fluid p-0">
         <div class="row g-3" data-type="cards">
             <!-- <div class="col-md-3">
@@ -386,60 +388,61 @@
         <div class="background-rectangle2"></div>
     </div>
     <footer>
-        <div class="container-fluid p-0" style="background-color: #272E38;">
-            <div class="row align-items-center" data-type="footer">
-                <!-- Эмблема слева -->
-                <div class="col-md-3 text-top">
-                    <img src="img/foot_logo.png" alt="footer_logo" style="max-width: 80px; height: auto;">
+  <div class="container-fluid p-0 footer-bg">
+    <div class="row align-items-center" data-type="footer">
+      <!-- Эмблема слева -->
+      <div class="col-md-3 text-top">
+        <img src="img/foot_logo.png" alt="footer_logo" class="footer-logo">
+      </div>
+      
+      <!-- Блок с ссылками и кнопками справа -->
+      <div class="col-md-8" data-type="foot">
+        <div class="d-flex align-items-start">
+          <div class="d-flex flex-column footer-links-container">
+            <div class="d-flex footer-links-margin">
+              <div class="col-md-4"> 
+                <div class="d-flex flex-column">
+                  <a href="#">Home</a>
+                  <a href="#">Products</a>
+                  <a href="#">Features</a>
+                  <a href="#">Private by Design</a>
+                  <a href="#">Support</a>
+                  <a href="#">Sitemap</a>
                 </div>
-                <!-- Блок с ссылками и кнопками справа -->
-                <div class="col-md-8" data-type="foot">
-                    <div class="d-flex align-items-start">
-                        <div class="d-flex flex-column" style=" width: 300px;">
-                            <div class="d-flex" style="margin-top: 4%;">
-                                <div class="col-md-4"> 
-                                    <div class="d-flex flex-column">
-                                        <a href="#">Home</a>
-                                        <a href="#">Products</a>
-                                        <a href="#">Features</a>
-                                        <a href="#">Private by Design</a>
-                                        <a href="#">Support</a>
-                                        <a href="#">Sitemap</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="d-flex flex-column">
-                                        <a href="#">Privacy Policy</a>
-                                        <a href="#">Cookies</a>
-                                        <a href="#">Terms of Use</a>
-                                        <a href="#">Legal</a>
-                                        <a href="#">Terms of Sale</a>
-                                        <a href="#">Ad Choices</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ml-0" style="margin-top: 4%;"> 
-                            <p style="font-size: 12px; margin: 0;">Get emails from Facebook about Portal <br>and other Facebook hardware products.</p>
-                            <button class="btn btn-primary btn-sm">Sign Up</button>
-                            <button class="btn btn-link btn-sm">United States (English)</button>
-                        </div>
-                    </div>
-                    <div class="mt-1">
-                        <p style="font-size: 11px;">“Hey Portal” voice command availability varies. Learn more. Screen images simulated. User experience may vary. Requires wireless internet connection and Facebook <br>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex flex-column">
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Cookies</a>
+                  <a href="#">Terms of Use</a>
+                  <a href="#">Legal</a>
+                  <a href="#">Terms of Sale</a>
+                  <a href="#">Ad Choices</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ml-0 footer-links-margin"> 
+            <p class="footer-email-text">Get emails from Facebook about Portal <br>and other Facebook hardware products.</p>
+            <button class="btn btn-primary btn-sm">Sign Up</button>
+            <button class="btn btn-link btn-sm">United States (English)</button>
+          </div>
+        </div>
+        <div class="mt-1">
+          <p class="footer-disclaimer-text">“Hey Portal” voice command availability varies. Learn more. Screen images simulated. User experience may vary. Requires wireless internet connection and Facebook <br>
                             or WhatsApp account. WhatsApp is not available on tablets. Features, functionality, and content vary and may not be available on all Portal models or <br>
                             in all areas and languages. Some features may require a Facebook account and downloading the Portal mobile app. Additional account registration, terms and 
                             <br>fees may apply.</p>
-                        <p style="font-size: 11px;">*Represents savings off of regular, non-promotional prices. Both products must be purchased on same receipt to qualify. Valid on qualifying purchases at <br> 
+          <p class="footer-disclaimer-text">*Represents savings off of regular, non-promotional prices. Both products must be purchased on same receipt to qualify. Valid on qualifying purchases at <br> 
                             Not valid on prior purchases and non-transferable. Not valid for cash or cash equivalent. Valid on in-stock products only. Offer may be cancelled <br>
                             or modified at any time without notice. Void where prohibited.</p>
-                        <p style="font-size: 11px;">©2021 Facebook, Inc. or its affiliates. All rights reserved. Facebook, Portal from Facebook and the Facebook logo are trademarks of Facebook, Inc. Amazon, Alexa <br>
+          <p class="footer-disclaimer-text">©2021 Facebook, Inc. or its affiliates. All rights reserved. Facebook, Portal from Facebook and the Facebook logo are trademarks of Facebook, Inc. Amazon, Alexa <br>
                             and all related logos are trademarks of Amazon.com, Inc. or its affiliates. Other names and brands may be claimed as the property of others.</p>
-                    </div>
-                </div>
-            </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="dist/scripts.js"></script>
